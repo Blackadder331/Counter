@@ -1,0 +1,312 @@
+*{
+  margin:0px; 
+  padding:0px; 
+  box-sizing:border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 100px;
+}
+
+.logo {
+  height: 4rem;
+}
+
+body{
+  background-color:#1c1c1c; 
+  padding:40px;
+  padding-top: 15vh;
+}
+
+.title{color: #00ffef; font-size:70px; line-height:1.125; font-family: sans-serif; padding-top:80px; padding-bottom:60px; width:90%; background-color:transparent; margin:40px auto; overflow:hidden; box-sizing: border-box; font-kerning: none;}
+.title span{color:#ffffff; overflow:hidden;}
+.title-subhead {
+  color: #ffffff;
+  font-size: 1.75rem;
+  line-height: 1.4;
+  padding-top: 0;
+  margin-top: 0;
+}
+img{width:100%;}
+
+section{width:100%; max-width:960px; margin:0 auto;}
+
+.cluster{position:relative; width:100%; max-width:874px; height:792px; margin:100px auto; background-color:transparent; padding-bottom:100px;}
+
+.clusterPieces{position:absolute;}
+
+.katakana-super{
+  width:100%; 
+  max-width:120px;  
+  left:240px;
+  top: -30px; 
+  bottom:0; 
+  z-index:3;
+}
+
+.dotsBlue{width:100%; height:auto; max-width:494px; max-height:434px; z-index:1; left:0; top:80px; }
+.dotsThree {width:100%; height:auto; max-width:494px; max-height:434px; z-index:1; left:0; top:80px; }
+
+.compA{
+  width:100%; 
+  height:auto; 
+  max-width:550px; 
+  max-height:700px; 
+  top:0; 
+  right:0; 
+  z-index:2;
+}
+.small-container {
+  padding: 20rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.image-sm{
+  max-width: 27%;
+  z-index:2;
+}
+.caption{font-family: 'Open Sans', sans-serif; font-size:14px; line-height:16px; color:#00ffef; text-align:right;}
+.caption-left{
+  font-family: 'Open Sans', sans-serif; 
+  font-size:14px; 
+  line-height:16px; 
+  color:#00ffef; 
+  text-align:left;
+}
+
+.caption-small{
+  font-family: 'Open Sans', sans-serif; 
+  font-size:14px; 
+  line-height:16px; 
+  color:#00ffef; 
+  text-align:left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: -2.5rem; */
+}
+
+.caption span{color:#ffffff;}
+
+#wrappie{width:960px; height:792px; margin:0 auto;}
+
+
+.dotsWhite{width:100%; height:auto; max-width:310px; max-height:588px; z-index:2; right:0; top:400px;}
+
+.compB{
+  width:100%; 
+  height:auto; 
+  max-width:550px; 
+  max-height:700px; 
+  top:162px; 
+  left:0; 
+  z-index:1;
+}
+
+.katakana-computer{
+  width:100%; 
+  max-width:120px;
+  right:250px; 
+  top: 0px; 
+  z-index:3; }
+
+.clusterB{max-width:874px; height:996px;}
+
+
+
+/* VOTE */
+
+.vote-headline {
+  margin-top: 15rem;
+}
+
+.vote {
+  display: flex;
+  align-items: center;
+  margin-top: -.5rem;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.vote-counter {
+  margin: 0 10px;
+  font-size: 24px;
+  /* Initialize different counters */
+  counter-reset: vote1 vote2 vote3 vote4 vote5 vote6 vote7 vote8 vote9;
+}
+
+.vote-arrow {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  color: #00ffef;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30px;
+}
+
+.vote-up {
+  /* background-image: url("up-arrow.png"); */
+  /* Increment different counters by one */
+  counter-increment: vote1; /* For #vote1 */
+  counter-increment: vote2; /* For #vote2 */
+  counter-increment: vote3; /* For #vote3 */
+  /* And so on... */
+  
+}
+
+/* .vote-down {
+  background-image: url("down-arrow.png");
+
+   counter-increment: vote1 -1; 
+   counter-increment: vote2 -1; 
+   counter-increment: vote3 -1;
+  
+
+}  */
+
+
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.spcr300{padding-bottom:300px;}
+
+
+footer {
+  min-height: 50rem;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+   .title{font-size:60px; line-height:1.1; padding-left:40px;}
+   .title-subhead {
+    font-size: 1.5rem;
+    line-height: 1.55;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .cluster{max-width:600px; height:550px; margin:20px auto;}
+  .dotsBlue{max-width:340px;left:0; top:56px;}
+  .compA{max-width: 355px;}
+  .katakana-super{
+    max-width: 63px;
+    left: 211px;
+    top: 61px;
+  }
+  
+  .caption{bottom:38px; right:0;}
+  
+    .clusterB{max-width:600px; height:678px;}
+    .dotsWhite{max-width:216px;left:404px; top:275px; z-index: 0;}
+    .compB{max-width:460px; top:112px;}
+    .katakana-computer{
+    max-width: 65px;
+    left: 445px;
+    top: 50px;
+    left: 427px;
+    }
+    .captionBurrowing{top:605px;}
+    .image-sm{
+      max-width: 36%;
+      z-index:2;
+    }
+}
+
+/* @media screen and (max-width: 1200px) {
+     .title{font-size:44px; line-height:61px;}
+  
+  .cluster{max-width:480px; height:436px;}
+  .dotsBlue{max-width:274px;left:0; top:45px;}
+  .compA, .compB{max-width:248px;}
+  .katakana-super{max-width:196px; height:196px; left:115px; top:240px;}
+  .caption{bottom:25px; right:0;}
+  
+  .clusterB{max-width:480px; height:542px;}
+    .dotsWhite{max-width:174px;left:0; top:220px;}
+    .compB{max-width:369px; top:88px;}
+    .katakana-computer{max-width:240px; height:240px; left:-10px;}
+    .captionBurrowing{top:482px;}
+} */
+
+@media screen and (max-width: 700px) {
+    .title{font-size:34px; line-height:1.15; padding-left:0px;}
+    .title-subhead {
+      font-size: 1rem;
+      line-height: 1.55;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .clusterPieces{position:relative;}
+  
+    .cluster{
+      max-width:320px; 
+      min-height: 70svh;
+      }
+    .dotsBlue{display:none}
+    .dotsThree{display:none}
+    .compA{max-width:320px; top:0;}
+    .katakana-super{display:none;}
+    .caption{float:right; bottom:0;}
+  
+    .clusterB{max-width:320px; height:268px;}
+    .dotsWhite{display:none}
+    .compB{max-width:320px; top:0;}
+    .katakana-computer{display:none}
+    .captionBurrowing{float:right; top:0; }
+
+    .small-container {
+      /* flex-direction: column; */
+      gap: 5rem;
+    }
+    .image-sm{
+      max-width: 100%;
+    }
+
+
+    .vote {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: flex-start;}
+
+    .cluster {
+        max-width: 320px;
+        min-height: 20svh;
+    }
+}
+
+/* fade up animation for text */
+.fade-text {
+  opacity: 0;
+  position: relative;
+  bottom: -100px;
+  animation: fadeInAndUp .8s ease-out forwards;
+}
+
+@keyframes fadeInAndUp {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
