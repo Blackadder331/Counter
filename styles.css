@@ -139,7 +139,7 @@ section{width:100%; max-width:960px; margin:0 auto;}
 }
 
 .vote-counter {
-  margin: 0 10px;
+  margin: 0 0 0 10px;
   font-size: 24px;
   /* Initialize different counters */
   counter-reset: vote1 vote2 vote3 vote4 vote5 vote6 vote7 vote8 vote9;
@@ -288,6 +288,14 @@ footer {
     .cluster {
         max-width: 320px;
         min-height: 20svh;
+    }
+
+    .vote-arrow {
+      justify-content: flex-start;
+    }
+
+    .vote-counter {
+      margin: 0 0 0 0px;
     }
 }
 
